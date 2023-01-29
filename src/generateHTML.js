@@ -31,6 +31,14 @@ function generatePhone(employee){
   return `<a href="tel:${employee.getOfficeNumber()}">${employee.getOfficeNumber()}</a>`;
 }
 
+function generateGithub(employee){
+  if(employee.role!=="Engineer"){
+    return "N/A";
+  }
+  
+  return `<a href=https://github.com/${employee.getGithub()}>${employee.getGithub()}</a>`
+}
+
 function generateEmployeeRow(employee) {
   return `
 <td>${employee.getId()}</td>
@@ -38,7 +46,7 @@ function generateEmployeeRow(employee) {
 <td>${employee.getRole()}</td>
 <td><a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a></td>
 <td>${generatePhone(employee)}</td>
-<td>${employee.getRole()==="Engineer"?employee.getGithub():"N/A"}</td>
+<td>${generateGithub(employee)}</td>
 <td>${employee.getRole()==="Intern"?employee.getSchool():"N/A"}</td>
 `
 }
@@ -50,7 +58,7 @@ function generateHTML(data) {
   for (var employee of data.employees) {
     employees.push(createEmployee(employee));
   }
-  console.log(JSON.stringify(employees));
+  //console.log(JSON.stringify(employees));
   return `<!DOCTYPE html>
 <html lang="en">
 
@@ -84,10 +92,28 @@ function generateHTML(data) {
 }
 
 function generateStyle(){
-  return `table, th, td{
-  border: 1px solid black;
-  border-collapse: collapse;
-}`
+  return `body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7CC2C5;
+  }
+  
+  table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 7px;
+    background-color: white;
+  }
+  
+  th {
+    background-color: #224168;
+    color: white;
+  }
+  
+  table {
+    box-shadow: grey 2px 2px 2px;
+  
+  }
+  `
 }
 
 module.exports = { generateHTML, generateStyle };
