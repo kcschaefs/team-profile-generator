@@ -1,5 +1,9 @@
 # team-profile-generator
 
+[Click here to view the video](https://drive.google.com/file/d/1wnbzkCWVeRJ7X4IjvDhmbbpPlBFa7PTQ/view)
+
+The generated HTML and CSS are located in the "dist" folder.
+
 ## User Story
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
