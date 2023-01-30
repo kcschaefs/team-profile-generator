@@ -1,6 +1,6 @@
 # team-profile-generator
 
-[Click here to view the video](https://drive.google.com/file/d/1wnbzkCWVeRJ7X4IjvDhmbbpPlBFa7PTQ/view)
+[Click here to view the video](https://drive.google.com/file/d/1wnbzkCWVeRJ7X4IjvDhmbbpPlBFa7PTQ/view?usp=share_link)
 
 The generated HTML and CSS are located in the "dist" folder.
 
