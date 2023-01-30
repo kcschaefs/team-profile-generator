@@ -67,11 +67,11 @@ function generateHTML(data) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css" />
-  <title>Document</title>
+  <title>Team Info</title>
 </head>
 
 <body>
-
+<h1>My Team's Contact Info</h1>
 
 <main>    
   <table style='border:1px solid black'>
@@ -111,7 +111,11 @@ function generateStyle(){
   
   table {
     box-shadow: grey 2px 2px 2px;
-  
+  }
+
+  h1 {
+    margin: auto;
+    padding: 5px;
   }
   `
 }

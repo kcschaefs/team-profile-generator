@@ -158,7 +158,7 @@ function init() {
     askEmployee();
   });
   //writeToFile("./dist/index.html", html.generateHTML(testData()));
-  //writeToFile("./dist/style.css", html.generateStyle());
+ // writeToFile("./dist/style.css", html.generateStyle());
 }
 
 // Function call to initialize app

@@ -17,6 +17,10 @@ body{
   
   table {
     box-shadow: grey 2px 2px 2px;
-  
+  }
+
+  h1 {
+    margin: auto;
+    padding: 5px;
   }
   
