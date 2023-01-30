@@ -110,7 +110,7 @@ function testData() {
         "name": "James",
         "role": "Engineer",
         "id":"567",
-        "github":"j567",
+        "github":"kcschaefs",
         "email":"j@company.com"
       },
       {
@@ -152,13 +152,13 @@ function askEmployee(){
 // TODO: Create a function to initialize app
 function init() {
 
-  // inquirer.prompt(managerQuestions).then(managerAnswers => {
-  //   fullData = managerAnswers;
-  //   fullData.employees = [];
-  //   askEmployee();
-  // });
-  writeToFile("./dist/index.html", html.generateHTML(testData()));
-  //writeToFile("./dist/style.css", html.generateStyle());
+  inquirer.prompt(managerQuestions).then(managerAnswers => {
+    fullData = managerAnswers;
+    fullData.employees = [];
+    askEmployee();
+  });
+  //writeToFile("./dist/index.html", html.generateHTML(testData()));
+ // writeToFile("./dist/style.css", html.generateStyle());
 }
 
 // Function call to initialize app
